@@ -1,65 +1,65 @@
-// ============================================================
+//============================================================
 // 晋级赛选手
-// ============================================================
-const db_forums = [
+//============================================================
+Const DB_forums=[
     {
-        title: "MCBBS",
-        url: "https://www.mcbbs.net",
-        state: "unknow",
-        createdAt: "2010/10/30",
-        updatedAt: "2024/03/24",
-        hasICP: "yes",
-        hasNetSec: "yes",
-        note: "直属B站的我的世界中文论坛。",
-        reference: []
+        标题:"MCBBS",
+        URL:"https://www.mcbbs.net",
+        状态:"未知",
+        createdAt:"2010/10/30",
+        updatedAt:"2024/03/24",
+        hasICP:"是",
+        hasNetSec:"是",
+        笔记:"直属B站的我的世界中文论坛。",
+        参考:[]
     },
     {
-        title: "最MC",
-        url: "http://www.zuimc.com",
-        state: "up",
-        createdAt: "2013/04/18",
-        updatedAt: "2024/03/24",
-        hasICP: "yes",
-        hasNetSec: "yes",
-        note: "网站处于待出售状态，暂停新用户注册，用户活动基本停止。",
-        reference: []
+        标题:"最MC",
+        URL:"http://www.zuimc.com",
+        状态:"向上",
+        createdAt:"2013/04/18",
+        updatedAt:"2024/03/24",
+        hasICP:"是",
+        hasNetSec:"是",
+        笔记:"网站处于待出售状态，暂停新用户注册，用户活动基本停止。",
+        参考:[]
     },
     {
-        title: "网易我的世界论坛",
-        url: "https://mc.netease.com",
-        state: "up",
-        createdAt: "2016/09/20",
-        updatedAt: "2024/03/24",
-        hasICP: "yes",
-        hasNetSec: "yes",
-        note: "由网易运营的我的世界中国版论坛，内嵌于客户端中。目前已禁止客户端以外的用户发帖，且 180 天前的帖子不可见。网易的游戏论坛业务已迁移至网易大神，网易我的世界论坛已基本停止运营。",
-        reference: []
+        标题:"网易我的世界论坛",
+        URL:"https://mc.netease.com",
+        状态:"向上",
+        createdAt:"2016/09/20",
+        updatedAt:"2024/03/24",
+        hasICP:"是",
+        hasNetSec:"是",
+        笔记:"由网易运营的我的世界中国版论坛，内嵌于客户端中。 目前已禁止客户端以外的用户发帖，且 180 天前的帖子不可见。 网易的游戏论坛业务已迁移至网易大神，网易我的世界论坛已基本停止运营。",
+        参考:[]
     },
     {
-        title: "MineBBS",
-        url: "https://minebbs.com",
-        state: "up",
-        createdAt: "2018/03/16",
-        updatedAt: "2024/03/24",
-        hasICP: "yes",
-        hasNetSec: "no",
-        note: "综合性MC论坛，以基岩版服务端资源为主要特色，于今年二月初重启Java版。",
-        reference: []
+        标题:"MineBBS",
+        URL:"https://minebbs.com",
+        状态:"向上",
+        createdAt:"2018/03/16",
+        updatedAt:"2024/03/24",
+        hasICP:"是",
+        hasNetSec:"没有",
+        笔记:"综合性MC论坛，以基岩版服务端资源为主要特色，于今年二月初重启Java版。",
+        参考:[]
     },
     {
-        title: "九域资源社区",
-        url: "https://bbs.mc9y.net",
-        state: "up",
-        createdAt: "2019/01/07",
-        updatedAt: "2024/03/24",
-        hasICP: "yes",
-        hasNetSec: "no",
-        note: "主营服务器插件。",
-        reference: []
+        标题:"九域资源社区",
+        URL:"https://bbs.mc9y.net",
+        状态:"向上",
+        createdAt:"2019/01/07",
+        updatedAt:"2024/03/24",
+        hasICP:"是",
+        hasNetSec:"没有",
+        笔记:"主营服务器插件。",
+        参考:[]
     },
     {
-        title: "暮光方块论坛",
-        url: "https://bbs.tsfk.top",
+        标题:"暮光方块论坛",
+        URL:"https://bbs.tsfk.top",
         state: "up",
         createdAt: "2019/02/15",
         updatedAt: "2024/03/24",
@@ -127,95 +127,95 @@ const db_forums = [
         title: "小僵尸论坛",
         url: "https://www.zitbbs.com",
         state: "up",
-        createdAt: "2021/07/20",
-        updatedAt: "2024/03/24",
-        hasICP: "yes",
-        hasNetSec: "no",
-        note: "",
-        reference: [
+        createdAt:"2021/07/20",
+        updatedAt:"2024/03/24",
+        hasICP:"是",
+        hasNetSec:"没有",
+        笔记:“”,
+        参考:[
             {
-                title: "MCBBS关站了，于是我们给大家准备了备用站",
-                url: "https://www.bilibili.com/video/BV1xm41197Ju/"
+                标题:MCBBS"关站了，于是我们给大家准备了备用站",
+                URL:"https://www.bilibili.com/video/BV1xm41197Ju/"
             }
         ]
     },
     {
-        title: "MCHVH",
-        url: "https://mchvh.com",
-        state: "up",
-        createdAt: "2021/12/30",
-        updatedAt: "2024/03/24",
-        hasICP: "no",
-        hasNetSec: "no",
-        note: "非大陆服务器。",
-        reference: []
+        标题:"MCHVH",
+        URL:"https://mchvh.com",
+        状态:"向上",
+        createdAt:"2021/12/30",
+        updatedAt:"2024/03/24",
+        hasICP:"没有",
+        hasNetSec:"没有",
+        笔记:"非大陆服务器。",
+        参考:[]
     },
     {
-        title: "MCPPS",
-        url: "https://mcpps.cn",
-        state: "up",
-        createdAt: "2022/02/04",
-        updatedAt: "2024/03/24",
-        hasICP: "yes",
-        hasNetSec: "yes",
-        note: "",
-        reference: []
+        标题:"MCPPS",
+        URL:"https://mcpps.cn",
+        状态:"向上",
+        createdAt:"2022/02/04",
+        updatedAt:"2024/03/24",
+        hasICP:"是",
+        hasNetSec:"是",
+        笔记:“”,
+        参考:[]
     },
     {
-        title: "我的世界铁路中文社区",
-        url: "https://www.mtrbbs.com.cn",
-        state: "up",
-        createdAt: "2022/02/26",
-        updatedAt: "2024/03/24",
-        hasICP: "no",
-        hasNetSec: "no",
-        note: "非大陆服务器。",
-        reference: [] 
+        标题:"我的世界铁路中文社区",
+        URL:"https://www.mtrbbs.com.cn",
+        状态:"向上",
+        createdAt:"2022/02/26",
+        updatedAt:"2024/03/24",
+        hasICP:"没有",
+        hasNetSec:"没有",
+        笔记:"非大陆服务器。",
+        参考:[] 
     },
     {
-        title: "我的世界UTC论坛",
-        url: "https://bbs.mcutc.cn",
-        state: "up",
-        createdAt: "2022/04/16",
-        updatedAt: "2024/03/24",
-        hasICP: "yes",
-        hasNetSec: "yes",
-        note: "主要发布 Minecraft 衍生资源。",
-        reference: [
+        标题:"我的世界UTC论坛",
+        URL:"https://bbs.mcutc.cn",
+        状态:"向上",
+        createdAt:"2022/04/16",
+        updatedAt:"2024/03/24",
+        hasICP:"是",
+        hasNetSec:"是",
+        笔记:"主要发布我的世界衍生资源。",
+        参考:[
             {
-                title: "我做了一个全新MC国际版资源论坛，界面简洁，访问迅速!",
-                url: "https://www.bilibili.com/video/BV1SC4y1Y7Ha/"
+                标题:"我做了一个全新MC国际版资源论坛，界面简洁，访问迅速!",
+                URL:"https://www.bilibili.com/video/BV1SC4y1Y7Ha/"
             },
             {
-                title: "MCUTC论坛，欢迎各位开发者和玩家注册，探索无尽可能性，打造你的游戏世界！",
-                url: "https://www.bilibili.com/video/BV18W421N7uv/"
+                标题:"MCUTC论坛，欢迎各位开发者和玩家注册，探索无尽可能性，打造你的游戏世界！",
+                URL:"https://www.bilibili.com/video/BV18W421N7uv/"
             },
             {
-                title: "MCUTC,我的世界资源论坛！欢迎您的访问！",
-                url: "https://www.bilibili.com/video/BV1oS421P7XM/"
+                标题:"MCUTC，我的世界资源论坛！欢迎您的访问！",
+                URL:"https://www.bilibili.com/video/BV1oS421P7XM/"
             },
             {
-                title: "[MCUTC]新开我的世界论坛，欢迎各位来注册！",
-                url: "https://www.bilibili.com/video/BV1Ax421f7Nz/"
+                标题:"[MCUTC]新开我的世界论坛，欢迎各位来注册！",
+                URL:"https://www.bilibili.com/video/BV1Ax421f7Nz/"
             },
             {
-                title: "MCUTCBBS，一个全新的MC资源论坛！发布/转载资源免费送MC周边！",
-                url: "https://www.bilibili.com/video/BV1xp421U7Vz/"
+                标题:"MCUTCBBS，一个全新的MC资源论坛！发布/转载资源免费送MC周边！",
+                URL:"https://www.bilibili.com/video/BV1xp421U7Vz/"
             },
             {
-                title: "【MCUTC】MC论坛招募管理人员！有企业备案和网安备案！",
-                url: "https://www.bilibili.com/video/BV1oJ4m1j7kC/"
+                标题:"[MCUTC]MC论坛招募管理人员！有企业备案和网安备案！",
+                URL:"https://www.bilibili.com/video/BV1oJ4m1j7kC/"
             }
         ]
     },
     {
-        title: "我的世界铁路中文论坛",
-        url: "https://www.mtrbbs.top",
-        state: "up",
-        createdAt: "2022/05/15",
-        updatedAt: "2024/03/24",
-        hasICP: "no",
-        hasNetSec: "no",
+        标题:"我的世界铁路中文论坛",
+        URL:"https://www.mtrbbs.top",
+        状态:"向上",
+        createdAt:"2022/05/15",
+        updatedAt:"2024/03/24",
+        hasICP:"没有",
+        hasNetSec:"没有",
         note: "非大陆服务器。",
         reference: []
     },
@@ -863,58 +863,69 @@ const db_forums_ex = [
     {
         title: "玩 MCBBS 导致的",
         url: "https://mcbbs.daozhi.de",
-        archiveUrl: "https://web.archive.org/web/20240309114439/https://mcbbs.daozhi.de/",
-        updatedAt: "2024/03/21",
-        note: "不如玩____",
-        reference: []
+        archiveUrl:"https://web.archive.org/web/20240309114439/https://mcbbs.daozhi.de/",
+        updatedAt:"2024/03/21",
+        笔记:"不如玩____",
+        参考:[]
     },
     {
-        title: "MCBBS UK",
-        url: "http://mcbbs.uk",
-        archiveUrl: "https://web.archive.org/web/20240310060053/http://mcbbs.uk/",
-        updatedAt: "2024/03/21",
-        note: "MCBBS in the UK.",
-        reference: []
+        标题:"MCBBS UK",
+        URL:"http://mcbbs.uk",
+        archiveUrl:"https://web.archive.org/web/20240310060053/http://mcbbs.uk/",
+        updatedAt:"2024/03/21",
+        笔记:"英国的MCBBS",
+        参考:[]
     },
     {
-        title: "MCBBS 活着",
-        url: "https://mcbbs.life",
-        archiveUrl: "https://web.archive.org/web/20240310112317/https://mcbbs.life/",
-        updatedAt: "2024/03/21",
-        note: "MCBBS 还活着！😭😭😭",
-        reference: []
+        标题:MCBBS"活着",
+        URL:"https://mcbbs.life",
+        archiveUrl:"https://web.archive.org/web/20240310112317/https://mcbbs.life/",
+        updatedAt:"2024/03/21",
+        笔记:MCBBS"还活着！😭😭😭",
+        参考:[]
     },
     {
-        title: "基岩我的世界中文论坛",
-        url: "http://bedrockmcbbs.web1337.net",
-        updatedAt: "2024/03/21",
-        note: "使用FreeFlarum。",
-        reference: [
+        标题:"基岩我的世界中文论坛",
+        URL:"http://bedrockmcbbs.web1337.net",
+        updatedAt:"2024/03/21",
+        笔记:"使用FreeFlarum",
+        参考:[
             {
-                title: "自搭的MC论坛:BedrockMCBBS",
-                url: "https://www.bilibili.com/video/BV1uZ42117iK/"
+                标题:"自搭的MC论坛：BedrockMCBBS",
+                URL:"https://www.bilibili.com/video/BV1uZ42117iK/"
             }
         ]
     },
     {
-        title: "MCBBS复活赛",
-        url: "https://bbs-archive.github.io",
-        updatedAt: "2024/03/21",
-        note: "MCBBS部分帖子的存档，持续收集中！",
-        reference: []
+        标题:MCBBS"复活赛",
+        URL:"https://bbs-archive.github.io",
+        updatedAt:"2024/03/21",
+        笔记:MCBBS"部分帖子的存档，持续收集中！",
+        参考:[]
     },
     {
-        title: "Hiluobo萝卜论坛&方块宇宙",
-        url: "https://hiluobo.flarum.cloud",
-        updatedAt: "2024/03/24",
-        note: "使用FreeFlarum。",
-        reference: []
+        标题:"希罗波萝卜论坛&方块宇宙",
+        URL:"https://hiluobo.flarum.cloud",
+        updatedAt:"2024/03/24",
+        笔记:"使用FreeFlarum",
+        参考:[]
     },
     {
-        title: "土豆社区",
-        url: "https://bbs2.potatokj.top",
-        updatedAt: "2024/03/24",
-        note: "使用FreeFlarum。",
-        reference: []
+        标题:"土豆社区",
+        URL:"https://bbs2.potatokj.top",
+        updatedAt:"2024/03/24",
+        笔记:"使用FreeFlarum",
+        参考:[]
+    },
+    {
+        标题:"REMCBBS",
+        URL:"https://www.REmcbbscom",
+        状态:"向上",
+        createdAt:"2024/3/24",
+        updatedAt:“”,
+        hasICP:"in_progress",
+        hasNetSec:"in_progress",
+        笔记:"想你了，mcbbs😭😭"
+参考：[]
     }
 ];
